@@ -1,0 +1,852 @@
+/*
+ * Okay, so there can be some major changes in main.css that
+ * mess up all bootstrap styles, but BS in this project mostly
+ * about grid. So take it or leave it
+ */
+
+/* ---------------------------------
+    Padding & margin of main blocks
+    (looks like I don't even care about adaptive design. Frankly speaking,
+     at some point I really don't give a sh*t, I've been told to do it this way)
+---------------------------------*/
+
+.custom-container {
+    margin: 0 60px;
+    padding: 0;
+}
+
+@media (max-width: 1199.98px) {
+    .custom-container {
+        margin: 0 45px;
+        padding: 0;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .custom-container {
+        margin: 0 30px;
+        padding: 0;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .custom-container {
+        margin: 0 15px;
+        padding: 0;
+    }
+}
+
+.row {
+    padding: 0;
+    margin: 0;
+}
+
+@media (min-width: 1380px) {
+    .mt-300 {
+        margin-top: 300px;
+    }
+
+    .mt-200 {
+        margin-top: 200px;
+    }
+
+    .mt-108 {
+        margin-top: 108px;
+    }
+
+    .mt-106 {
+        margin-top: 106px;
+    }
+
+    .mt-80 {
+        margin-top: 80px;
+    }
+
+    .mt-54 {
+        margin-top: 54px;
+    }
+
+    .mt-50 {
+        margin-top: 50px;
+    }
+
+    .mb-90 {
+        margin-bottom: 90px;
+    }
+
+    .mb-80 {
+        margin-top: 80px;
+    }
+
+    .pl-62 {
+        padding-left: 62px;
+    }
+
+    .pr-36 {
+        padding-right: 36px;
+    }
+
+    .prl-10 {
+        padding: 0 10px;
+    }
+
+    .pt-54 {
+        padding-top: 54px;
+    }
+
+    .pb-24 {
+        padding-bottom: 24px;
+    }
+
+    .ml--80 {
+        margin-left: -80px;
+    }
+
+    .mt-16vh {
+        margin-top: 16vh;
+    }
+
+    .mt-10vh {
+        margin-top: 10vh;
+    }
+
+    .mt-6vh {
+        margin-top: 6vh;
+    }
+}
+
+@media (max-width: 1379.98px) {
+    .mt-300 {
+        margin-top: 300px;
+    }
+
+    .mt-200 {
+        margin-top: 200px;
+    }
+
+    .mt-108 {
+        margin-top: 108px;
+    }
+
+    .mt-80 {
+        margin-top: 80px;
+    }
+
+    .mt-106 {
+        margin-top: 60px;
+    }
+
+    .mt-54 {
+        margin-top: 54px;
+    }
+
+    .mb-90 {
+        margin-bottom: 70px;
+    }
+
+    .mb-80 {
+        margin-top: 80px;
+    }
+
+    .pl-62 {
+        padding-left: 62px;
+    }
+
+    .pr-36 {
+        padding-right: 36px;
+    }
+
+    .pt-54 {
+        padding-top: 54px;
+    }
+
+    .pb-24 {
+        padding-bottom: 24px;
+    }
+
+    .ml--80 {
+        margin-left: -80px;
+    }
+
+    .mt-16vh {
+        margin-top: 16vh;
+    }
+
+    .mt-10vh {
+        margin-top: 10vh;
+    }
+
+    .mt-6vh {
+        margin-top: 6vh;
+    }
+}
+
+@media (max-width: 567.98px) {
+
+    .mt-108 {
+        margin-top: 28px;
+    }
+    .mt-80 {
+        margin-top: 1rem;
+    }
+    .mb-90 {
+        margin-bottom: 36px;
+    }
+}
+
+.rb-corner {
+    position:absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.clear-right {
+    clear: right;
+}
+
+/* ---------------------------------
+    Header & footer
+---------------------------------*/
+header {
+    box-shadow: 0 2px 8px rgba(255,255,255,0.9);
+}
+
+.header {
+    padding: 36px 75px 0;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+@media (max-width: 567.98px) {
+    .header {
+        padding: 8px 28px 8px;
+        margin: 0;
+        background-color: #ffffff;
+    }
+}
+
+.header-line {
+    border-bottom: 2px solid #000000;
+    font-size: 0;
+}
+
+.navbar {
+    margin: 0;
+    background-color: #ffffff;
+}
+
+.footer-border {
+    border-top: 2px solid black;
+}
+
+.form-control-footer {
+    border: 0 solid #ced4da;
+    border-bottom: 1px solid #828990;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1;
+    color: #828990;
+    background-color: #fff;
+    border-radius: 0;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.form-control-footer:focus {
+    border-color: #d22717;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #000000;
+}
+
+.navbar-light:hover .nav-link:hover{
+    color: #d22717;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:hover .navbar-toggler:focus .navbar-toggler:active {
+    border: none;
+    outline: none;
+}
+
+.fa.fa-bars {
+    color: #000000;
+    border: none;
+}
+/* ---------------------------------
+    Text
+---------------------------------*/
+
+p {
+    font-size: 26px;
+    line-height: 1;
+    text-align: left;
+    color: #000000;
+
+}
+
+.txt-60 {
+    font-size: 60px;
+}
+
+.txt-48 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.txt-45 {
+    font-size: 45px;
+    line-height: 1;
+}
+
+.txt-40 {
+    font-size: 40px;
+}
+
+.txt-35 {
+    font-size: 35px;
+}
+
+.txt-30 {
+    font-size: 30px;
+    line-height: 1;
+}
+
+.txt-26 {
+    font-size: 26px;
+}
+
+.txt-23 {
+    font-size: 23px;
+    line-height: 1.2;
+}
+
+.txt-20 {
+    font-size: 20px;
+    line-height: 1;
+}
+
+.txt-14 {
+    font-size: 14px;
+    line-height: 1;
+}
+
+h2 {
+    padding: 0;
+    margin: 0 10px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 73px;
+    font-weight: 500;
+    /*line-height: 1.5;*/
+    color: #000000;
+    text-align: left;
+    background-color: #fff;
+}
+
+h3 {
+     margin: 0;
+     font-family: 'Noto Sans', sans-serif;
+     font-size: 33px;
+     font-weight: 500;
+     /*line-height: 1.5;*/
+     color: #000000;
+     text-align: left;
+     background-color: #fff;
+ }
+
+@media (max-width: 1379.98px) {
+    p {
+        font-size: 21px;
+        line-height: 1;
+        text-align: left;
+    }
+
+    .txt-60 {
+        font-size: 38px;
+    }
+
+    .txt-48 {
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    .txt-45 {
+        font-size: 36px;
+        line-height: 1;
+    }
+
+    .txt-40 {
+        font-size: 28px;
+    }
+
+    .txt-35 {
+        font-size: 28px;
+    }
+
+    .txt-30 {
+        font-size: 24px;
+        line-height: 1;
+    }
+
+    .txt-26 {
+        font-size: 21px;
+    }
+
+    .txt-23 {
+        font-size: 18px;
+        line-height: 1.2;
+    }
+
+    .txt-20 {
+        font-size: 16px;
+        line-height: 1;
+    }
+
+    h2 {
+        padding: 0;
+        margin: 0 10px;
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 58px;
+        font-weight: 500;
+        /*line-height: 1.5;*/
+        color: #000000;
+        text-align: left;
+        background-color: #fff;
+    }
+
+    h3 {
+        margin: 0;
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 26px;
+        font-weight: 500;
+        /*line-height: 1.5;*/
+        color: #000000;
+        text-align: left;
+        background-color: #fff;
+    }
+}
+
+@media (max-width: 991.98px) {
+    p {
+        font-size: 17px;
+        line-height: 1;
+        text-align: left;
+    }
+
+    .txt-60 {
+        font-size: 38px;
+    }
+
+    .txt-48 {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    .txt-45 {
+        font-size: 29px;
+        line-height: 1;
+    }
+
+    .txt-40 {
+        font-size: 26px;
+    }
+
+    .txt-35 {
+        font-size: 22px;
+    }
+
+    .txt-30 {
+        font-size: 19px;
+        line-height: 1;
+    }
+
+    .txt-26 {
+        font-size: 17px;
+    }
+
+    .txt-23 {
+        font-size: 14px;
+        line-height: 1.2;
+    }
+
+    .txt-20 {
+        font-size: 13px;
+        line-height: 1;
+    }
+
+    h2 {
+        padding: 0;
+        margin: 0 10px;
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 46px;
+        font-weight: 500;
+        /*line-height: 1.5;*/
+        color: #000000;
+        text-align: left;
+        background-color: #fff;
+    }
+
+    h3 {
+        margin: 0;
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 21px;
+        font-weight: 500;
+        /*line-height: 1.5;*/
+        color: #000000;
+        text-align: left;
+        background-color: #fff;
+    }
+}
+
+@media (max-width: 767.98px) {
+    p {
+        font-size: 17px;
+        line-height: 1;
+        text-align: left;
+    }
+
+    .txt-60 {
+        font-size: 38px;
+    }
+
+    .txt-48 {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    .txt-45 {
+        font-size: 29px;
+        line-height: 1;
+    }
+
+    .txt-40 {
+        font-size: 26px;
+    }
+
+    .txt-35 {
+        font-size: 22px;
+    }
+
+    .txt-30 {
+        font-size: 19px;
+        line-height: 1;
+    }
+
+    .txt-26 {
+        font-size: 17px;
+    }
+
+    .txt-23 {
+        font-size: 14px;
+        line-height: 1.2;
+    }
+
+    .txt-20 {
+        font-size: 13px;
+        line-height: 1;
+    }
+
+    h2 {
+        padding: 0;
+        margin: 0 10px;
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 46px;
+        font-weight: 500;
+        /*line-height: 1.5;*/
+        color: #000000;
+        text-align: left;
+        background-color: #fff;
+    }
+
+    h3 {
+        margin: 0;
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 21px;
+        font-weight: 500;
+        /*line-height: 1.5;*/
+        color: #000000;
+        text-align: left;
+        background-color: #fff;
+    }
+}
+
+@media (max-width: 575.98px) {
+    p {
+        font-size: 17px;
+        line-height: 1;
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .txt-60 {
+        font-size: 38px;
+    }
+
+    .txt-48 {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    .txt-45 {
+        font-size: 20px;
+        line-height: 1;
+    }
+
+    .txt-40 {
+        font-size: 24px;
+    }
+
+    .txt-35 {
+        font-size: 20px;
+    }
+
+    .txt-30 {
+        font-size: 19px;
+        line-height: 1;
+    }
+
+    .txt-26 {
+        font-size: 17px;
+    }
+
+    .txt-23 {
+        font-size: 14px;
+        line-height: 1.2;
+    }
+
+    .txt-20 {
+        font-size: 13px;
+        line-height: 1;
+    }
+
+    h2 {
+        padding: 0;
+        margin: 0 10px;
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 36px;
+        font-weight: 500;
+        /*line-height: 1.5;*/
+        color: #000000;
+        text-align: left;
+        background-color: #fff;
+    }
+
+    h3 {
+        margin: 0;
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 21px;
+        font-weight: 500;
+        /*line-height: 1.5;*/
+        color: #000000;
+        text-align: left;
+        background-color: #fff;
+    }
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #d22717;
+}
+
+.red {
+    color: #d22717;
+}
+
+.font-serif {
+    font-family: 'Noto Serif', serif;
+}
+
+.font-playfair {
+    font-family: 'Playfair Display', serif;
+}
+
+.txt-align-right {
+    text-align: right;
+}
+
+
+/* ---------------------------------
+    Cards (FAQ's page)
+---------------------------------*/
+
+.card {
+    background-color: #fff;
+    border: 0;
+    border-radius: 0;
+}
+
+.card-header {
+    background-color: #FFFFFF;
+    border-bottom: 0;
+    padding: 6px 0;
+}
+
+.card-body {
+    padding: 0 6px;
+}
+
+.button-faq {
+    font-weight: 400;
+    color: #000000;
+    text-decoration: none;
+    text-align: left;
+    padding: 12px 0;
+}
+
+/*
+.button-faq:hover {
+    color: #030304;
+    text-decoration: underline;
+}
+
+.button-faq:focus, .button-faq.focus {
+    color: #030304;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+*/
+/* ---------------------------------
+    Forms
+---------------------------------*/
+
+
+.form-control {
+    border: 0 solid #ced4da;
+    border-bottom: 2px solid #000000;
+    padding: 0;
+    font-size: 26px;
+    line-height: 1.5;
+    color: #000000;
+    background-color: #fff;
+    border-radius: 0;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #d22717;
+    outline: 0;
+    color: #000000;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+@media (max-width: 767.98px) {
+    .form-control {
+        border: 0 solid #ced4da;
+        border-bottom: 2px solid #000000;
+        padding: 0;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #000000;
+        background-color: #fff;
+        border-radius: 0;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+}
+
+.btn {
+    color: #000000;
+}
+
+.btn:hover {
+    color: #d22717;
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
+/* ---------------------------------
+    Filter
+---------------------------------*/
+
+.contain {
+    overflow: hidden;
+}
+
+.filterDiv {
+    display: none; /* Hidden by default */
+}
+
+.show {
+    display: block;
+}
+
+
+/* ---------------------------------
+    Img
+---------------------------------*/
+
+.z-index-2000{
+    z-index: 2000;
+}
+
+.width-85 {
+    width: 85%;
+}
+
+/* okay this is pretty shitty code. just deal with it */
+
+@media (min-width: 992px) {
+    .width-75 {
+        width: 100%;
+    }
+
+    .width-lg-54{
+        width: 54px;
+        height: auto;
+    }
+
+}
+
+@media (max-width: 991.98px) {
+    .width-75 {
+        width: 75%;
+    }
+
+    .width-lg-54{
+        width: 40px;
+        height: auto;
+    }
+
+    .width-sm-24{
+        width: 24px;
+        height: 24px;
+    }
+
+    .width-sm-24-18{
+        width: 24px;
+        height: 18px;
+    }
+
+    .width-sm-64-24{
+        width: 64px;
+        height: 24px;
+    }
+
+    .width-sm-16 {
+        width: 16px;
+        height: 16px;
+    }
+
+
+
+}

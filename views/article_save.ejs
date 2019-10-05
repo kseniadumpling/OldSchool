@@ -1,0 +1,146 @@
+<%- include('./includes/head.ejs') %>
+
+<body>
+    <!-- Header -->
+    <%- include('./includes/header.ejs') %>
+    <main>
+        <div class="custom-container pt-54">
+            <div class="row justify-content-around text-center" id="myBtnContainer">
+                <div class="col-lg-2 col-md-4 col-sm-5">
+                    <button class="btn txt-30" onclick="filterSelection('school')">
+                        Школа
+                    </button>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-5">
+                    <button class="btn txt-30" onclick="filterSelection('physics')">
+                        Физика
+                    </button>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-5">
+                    <button class="btn txt-30" onclick="filterSelection('learning')">
+                        Обучение
+                    </button>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <button class="btn txt-30" onclick="filterSelection('psychology')">
+                        Психология
+                    </button>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <button class="btn txt-30" onclick="filterSelection('info')">
+                        Материалы
+                    </button>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <button class="btn txt-30" onclick="filterSelection('exams')">
+                        Экзамены
+                    </button>
+                </div>
+            </div>
+            <div class="contain">
+                <!-- First article -->
+                <div class="row pt-54">
+                    <div class="col-lg-8 filterDiv school">
+                        <p class="txt-40 font-playfair pb-2">
+                            Почему ребенку так необходимо задавать вопросы, даже если ответы их не интересуют? И как на них отвечать?
+                        </p>
+                        <p class="txt-23 font-playfair">
+                            Рванулся он, скинул с себя татар, — да еще соскакали с коней трое на него, начали бить прикладами по голове.
+                            Помутилось у него в глазах и зашатался. Схватили его татары, сняли с седел подпруги запасные,
+                            закрутили ему руки за спину, завязали татарским узлом, поволокли к седлу. Шапку с него сбили, сапоги стащили,
+                            всё обшарили, деньги, часы вынули, платье всё изорвали. Оглянулся Жилин на свою лошадь. Она, сердечная,
+                            как упала на бок, так и лежит, только бьется ногами, — до земли не достает; в голове дыра,
+                            и из дыры так и свищет кровь черная, — на аршин кругом пыль смочила.
+                        </p>
+                    </div>
+                    <div class="col-lg-1 pl-0">
+                        <!-- <img src="images/"> -->
+                    </div>
+                </div><!-- End of first -->
+                <!-- Second row -->
+                <div class="row pt-4">
+                    <div class="col-lg-4 my-auto">
+                        <img src="images/5.jpg" class="img-fluid">
+                    </div>
+                    <div class="col-lg-8 filterDiv physics">
+                        <p class="txt-40 font-playfair pb-2">
+                            Все смешалось в доме Облонских. Жена узнала, что муж был в связи с бывшею в их доме француженкою-гувернанткой,
+                            и объявила мужу, что не может жить с ним в одном доме.
+                        </p>
+                        <p class="txt-23 font-playfair">
+                            Неприятнее всего была та первая минута, когда он, вернувшись из театра, веселый и довольный,
+                            с огромною грушей для жены в руке, не нашел жены в гостиной; к удивлению, не нашел ее и в кабинете и,
+                            наконец, увидал ее в спальне с несчастною, открывшею все, запиской в руке. Она, эта вечно озабоченная,
+                            и хлопотливая, и недалекая, какою он считал ее, Долли, неподвижно сидела с запиской в руке
+                            и с выражением ужаса, отчаяния и гнева смотрела на него.
+                        </p>
+                    </div>
+                </div><!-- End of second -->
+                <!-- Third row -->
+                <div class="row pt-4">
+                    <div class="col-lg-8 filterDiv school">
+                        <p class="txt-40 font-playfair pb-2">
+                            «Всему виной эта глупая улыбка», — думал Стива.
+                        </p>
+                        <p class="txt-23 font-playfair">
+                            Степан Аркадьич был человек правдивый в отношении к себе самому. Он не мог обманывать себя и уверять себя,
+                            что он раскаивается в своем поступке. Он не мог раскаиваться теперь в том, в чем он раскаивался
+                            когда-то лет шесть тому назад, когда он сделал первую неверность жене. Он не мог раскаиваться в том,
+                            что он, тридцатичетырехлетний, красивый, влюбчивый человек, не был влюблен в жену,
+                            мать пяти живых и двух умерших детей, бывшую только годом моложе его
+                        </p>
+                    </div>
+                </div><!-- End of third -->
+                <!-- Fourth row -->
+                <div class="row pt-4">
+                    <div class="col-lg-4">
+                    </div>
+                    <div class="col-lg-8 filterDiv physics">
+                        <p class="txt-40 font-playfair pb-2">
+                            — Я приказал прийти в то воскресенье, а до тех пор чтоб не беспокоили вас и себя понапрасну, — сказал он, видимо, приготовленную фразу.
+                        </p>
+                        <p class="txt-23 font-playfair">
+                            Рванулся он, скинул с себя татар, — да еще соскакали с коней трое на него, начали бить прикладами по голове.
+                            Помутилось у него в глазах и зашатался. Схватили его татары, сняли с седел подпруги запасные,
+                            закрутили ему руки за спину, завязали татарским узлом, поволокли к седлу. Шапку с него сбили, сапоги стащили,
+                            всё обшарили, деньги, часы вынули, платье всё изорвали.
+                        </p>
+                    </div>
+                </div><!-- End of fourth -->
+                <!-- Fifth row -->
+                <div class="row pt-4">
+                    <div class="col-lg-8 filterDiv learning">
+                        <p class="txt-40 font-playfair pb-2">
+                            Степан Аркадьич сел, прочел письма. Одно было очень неприятное — от купца, покупавшего лес в имении жены.
+                            Лес этот необходимо было продать; но теперь, до примирения с женой, не могло быть о том речи.
+                        </p>
+                        <p class="txt-23 font-playfair">
+                            Рванулся он, скинул с себя татар, — да еще соскакали с коней трое на него, начали бить прикладами по голове.
+                            Помутилось у него в глазах и зашатался. Схватили его татары, сняли с седел подпруги запасные,
+                            закрутили ему руки за спину, завязали татарским узлом, поволокли к седлу. Шапку с него сбили,
+                            сапоги стащили, всё обшарили, деньги, часы вынули, платье всё изорвали. Неприятнее всего была та первая минута,
+                            когда он, вернувшись из театра, веселый и довольный, с огромною грушей для жены в руке, не нашел жены в гостиной;
+                            к удивлению, не нашел ее и в кабинете и, наконец, увидал ее в спальне с несчастною, открывшею все, запиской в руке.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 my-auto float-right">
+                        <img src="images/6_1.jpg" class="img-fluid">
+                    </div>
+                </div><!-- End of fifth -->
+            </div>
+
+            <!-- Footer -->
+            <div class="row">
+                <script>
+                            var link = document.querySelector('link[rel=import]');
+                            var content = link.import.querySelector('#import-footer');
+                            document.body.appendChild(content.cloneNode(true));
+                </script>
+            </div> <!-- End of footer -->
+        </div>
+    </main>
+    <!-- Footer -->
+    <%- include('./includes/footer.ejs') %>
+    <%- include('./includes/end.ejs') %>
+</body>
+</html>

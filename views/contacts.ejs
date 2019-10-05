@@ -1,0 +1,46 @@
+<%- include('./includes/head.ejs') %>
+<body>
+    <!-- Header -->
+    <%- include('./includes/header.ejs') %>
+    <main>
+        <div class="custom-container mt-106">
+            <form action="/contacts" method="POST">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-sm-8">
+                    <p class="txt-40">Связаться с нами</p>
+                    <div class="row pt-4">
+                        <div class="col-12 pl-0 pr-0">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required> <br>
+                        </div>
+                        <div class="col-12 pl-0 pr-0">
+                            <input type="text" class="form-control" id="title" name="title" placeholder="Тема вопроса" required> <br>
+                        </div>
+                        <div class="col-12 pl-0 pr-0">
+                            <textarea class="form-control" id="text" name="text" rows="4" placeholder="Ваш текст" required></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn txt-35 float-right pt-4">Отправить </button>
+                </div>
+            </div>
+            </form>
+            <div class="row justify-content-center mt-200">
+                <div class="col-md-6 col-sm-8">
+                    <div class="row">
+                        <div class="col-6 pl-0">
+                            <img src="images/vk.png" class="width-sm-24">
+                            <img src="images/fb.png" class="width-sm-24">
+                            <img src="images/yt.png" class="width-sm-24-18">
+                        </div>
+                        <div class="col-6 float-right pr-0">
+                            <p class="txt-35 float-right">info@schoold.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <%- include('./includes/footer.ejs') %>
+    <%- include('./includes/end.ejs') %>
+</body>
+</html>
