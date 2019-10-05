@@ -19,6 +19,6 @@ app.use(routes);
 
 app.use(errorController.get404);
 
-app.listen(80, () => {
-	console.log(`App running at http://localhost:25565`)
+app.listen(4000, () => {
+	console.log(`App running at http://localhost:4000`)
 });
